@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    background: transparent;
+    padding: 6px 12px;
+    border: 1px transparent solid;
+    outline: none;
+    border-radius: 2px;
+    font-size: 14px;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    &.btn-default{
+        position: relative;
+        color: #333;
+        border-color: #ccc;
+        background-color: #fff;
+        &:after{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 30%;
+            height: 1px;
+            background: transparent;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.27);
+            
+        }
+    }
+}
